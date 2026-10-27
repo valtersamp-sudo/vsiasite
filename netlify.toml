@@ -1,0 +1,7 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/privacidade"
+  to = "/#privacidade"
+  status = 301

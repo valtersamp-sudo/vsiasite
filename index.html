@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>VSIA Solutions — Soluções com IA em São Paulo</title>
+<meta name="description" content="Estúdio de soluções com IA em São Paulo: marcas, criativos, vídeos, sites, apps e 3D.">
+<meta name="theme-color" content="#0a0a0b">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="VSIA Solutions — Soluções com IA em São Paulo">
+<meta property="og:description" content="Marcas, criativos, vídeos, sites, apps e 3D com inteligência artificial.">
+<meta name="robots" content="index,follow">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="format-detection" content="telephone=no">
+<script>document.documentElement.classList.add('js')</script>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;500;700&family=Manrope:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#0a0a0b;--bg2:#121214;--tx:#edeae6;--mu:#a09b95;--red:#d3322c;--red2:#ff5a52;--ln:rgba(255,255,255,.1);
+--d:'Unbounded','Arial Black',system-ui,sans-serif;--b:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;box-sizing:border-box;
+padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+html.lenis,html.lenis body{height:auto}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 1.0625rem/1.6 var(--b);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--red2);outline-offset:4px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--red);padding:.6rem 1rem;z-index:100;border-radius:8px}
+.skip:focus{left:8px}
+#bg{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+#vid{position:fixed;inset:0;width:100%;height:100%;object-fit:cover;z-index:-1;opacity:.35;display:none}
+#vid.on{display:block}
+main,header,footer{position:relative;z-index:2}
+.wrap{width:min(1240px,100% - 2.5rem);margin-inline:auto}
+header{position:fixed;top:0;left:0;right:0;z-index:20;padding:calc(1rem + env(safe-area-inset-top,0px)) 0 1rem;background:linear-gradient(var(--bg),transparent)}
+nav{display:flex;justify-content:space-between;align-items:center}
+.logo{display:block;line-height:0}.logo img{height:30px;width:auto;display:block}
+.links{display:flex;gap:2rem;font-size:.9rem;color:var(--mu)}
+.links a:hover{color:var(--tx)}
+.btn{display:inline-flex;align-items:center;gap:.6rem;min-height:48px;padding:.85rem 1.6rem;border-radius:99px;background:var(--red);color:#fff;font:600 .95rem var(--b);transition:transform .4s cubic-bezier(.2,.8,.2,1),background .3s}
+.btn:hover{background:#e23c35;transform:translateY(-2px)}
+.btn.ghost{background:transparent;border:1px solid var(--ln)}
+.btn.ghost:hover{border-color:var(--red2);background:transparent}
+section{padding:clamp(5rem,12vw,10rem) 0}
+.eyebrow{font:500 .75rem var(--d);letter-spacing:.25em;text-transform:uppercase;color:var(--red2);margin:0 0 1.5rem}
+.hero{min-height:100svh;display:flex;align-items:center;padding-top:7rem}
+h1{font:700 clamp(2.4rem,7.4vw,6.4rem)/1.02 var(--d);letter-spacing:-.03em;margin:0 0 1.8rem;max-width:11ch}
+h1 .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em}
+h1 .w>span{display:inline-block}
+h1 em{font-style:normal;color:var(--red)}
+.lead{max-width:34rem;color:var(--mu);font-size:clamp(1.05rem,1.6vw,1.25rem);margin:0 0 2.4rem}
+.cta{display:flex;flex-wrap:wrap;gap:1rem}
+.scrollhint{position:absolute;bottom:2rem;left:50%;translate:-50% 0;font-size:.7rem;letter-spacing:.3em;color:var(--mu);text-transform:uppercase}
+.mq{border-block:1px solid var(--ln);overflow:hidden;padding:1.4rem 0;background:rgba(10,10,11,.6);backdrop-filter:blur(8px)}
+.trk{display:flex;width:max-content;animation:mq 40s linear infinite;font:300 clamp(1.4rem,3vw,2.4rem) var(--d);color:var(--mu);white-space:nowrap}.grp{display:flex;gap:3rem;padding-right:3rem}
+.mq i{font-style:normal;color:var(--red)}
+@keyframes mq{to{transform:translateX(-25%)}}
+h2{font:700 clamp(1.9rem,4.6vw,3.8rem)/1.08 var(--d);letter-spacing:-.025em;margin:0 0 3.5rem;max-width:16ch}
+.list{border-top:1px solid var(--ln)}#servicos{position:relative;overflow:hidden;color:#fff;--sx:0%;
+background:repeating-linear-gradient(90deg,rgba(255,255,255,.03) 0 1px,rgba(0,0,0,.035) 1px 3px),
+linear-gradient(115deg,rgba(150,24,20,.9) 0%,rgba(214,48,42,.86) 28%,rgba(236,66,58,.84) 46%,rgba(190,36,31,.88) 62%,rgba(140,22,18,.92) 100%);
+-webkit-backdrop-filter:blur(16px) saturate(1.25);backdrop-filter:blur(16px) saturate(1.25);
+box-shadow:inset 0 1px 0 rgba(255,255,255,.45),inset 0 -1px 0 rgba(0,0,0,.4)}
+#servicos::before{content:"";position:absolute;top:0;bottom:0;left:-50%;width:200%;pointer-events:none;transform:translateX(var(--sx));
+background:linear-gradient(105deg,transparent 34%,rgba(255,255,255,.09) 44%,rgba(255,255,255,.02) 50%,transparent 58%)}
+#servicos>.wrap{position:relative;z-index:1}
+#servicos .eyebrow,#servicos h2{color:#fff}
+#servicos .list{border-top-color:rgba(255,255,255,.5)}
+#servicos .row{border-bottom-color:rgba(255,255,255,.5)}
+#servicos .row span{color:#fff;font-weight:700}
+#servicos .row h3{color:#fff}
+#servicos .row p{color:#fff;max-width:48ch}
+#servicos .row::before{background:#0a0a0b;height:2px}
+#servicos .row:hover h3{color:#0a0a0b}
+::selection{background:var(--red);color:#fff}
+#manifesto{position:relative;min-height:100svh;display:flex;align-items:center}
+#manifesto::before{content:"";position:absolute;inset:0;pointer-events:none;background:rgba(10,10,11,.84);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);-webkit-mask-image:linear-gradient(transparent,#000 20%,#000 80%,transparent);mask-image:linear-gradient(transparent,#000 20%,#000 80%,transparent)}
+#manifesto>.wrap{position:relative;z-index:1}
+.man{text-shadow:0 2px 28px rgba(10,10,11,.9)}
+.pg{position:fixed;top:0;left:0;width:100%;height:3px;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,#ff5a52,#fff);z-index:40;pointer-events:none}
+@media(prefers-reduced-motion:reduce){.man span{opacity:1}.pg{display:none}}
+.row{display:grid;grid-template-columns:3.5rem 1fr 1.25fr;gap:2rem;align-items:center;padding:2.75rem 0;border-bottom:1px solid var(--ln);position:relative;transition:padding .5s cubic-bezier(.2,.8,.2,1)}
+.row::before{content:"";position:absolute;left:0;bottom:-1px;height:1px;width:0;background:var(--red);transition:width .7s cubic-bezier(.2,.8,.2,1)}
+.row:hover::before{width:100%}.row:hover h3{color:var(--red2)}
+.row span{font:500 .8rem var(--d);color:var(--red2)}
+.row h3{font:500 clamp(1.5rem,2.8vw,2.3rem) var(--d);margin:0;letter-spacing:-.02em;color:#fff}
+.row p{margin:0;color:#c4bfb9;font-size:1rem;line-height:1.65;max-width:34ch}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.card{padding:2rem;border:1px solid var(--ln);border-radius:24px;background:linear-gradient(160deg,rgba(255,255,255,.05),rgba(255,255,255,.01));backdrop-filter:blur(14px)}
+.card b{display:block;font:300 3rem var(--d);color:var(--red);margin-bottom:1.5rem}
+.card h3{font:500 1.2rem var(--d);margin:0 0 .8rem}.card p{margin:0;color:var(--mu)}
+.man{font:500 clamp(1.6rem,4.2vw,3.4rem)/1.25 var(--d);letter-spacing:-.02em;max-width:24ch}
+.man span{opacity:.26}
+.end{text-align:center}
+.end h2{margin-inline:auto;max-width:14ch}
+.end .cta{justify-content:center}
+footer{border-top:1px solid var(--ln);padding:2rem 0 calc(2rem + env(safe-area-inset-bottom,0px));color:var(--mu);font-size:.85rem;background:var(--bg)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+#pre{position:fixed;inset:0;z-index:99;background:var(--bg);display:flex;align-items:flex-end;justify-content:space-between;padding:2rem;font:700 clamp(3rem,12vw,9rem)/1 var(--d)}
+#pre small{font:400 .8rem var(--b);letter-spacing:.3em;color:var(--mu);align-self:flex-start}
+#pre b{color:var(--red)}
+html:not(.js) #pre{display:none}
+.js [data-r]{opacity:0}
+@media(max-width:820px){.links{display:none}.row{grid-template-columns:2.5rem 1fr;gap:.6rem 1rem;padding:2rem 0;align-items:start}.row p{grid-column:2;max-width:none}.steps{grid-template-columns:1fr}.hero{align-items:flex-end;padding-bottom:6rem}}
+@media(prefers-reduced-motion:reduce){.trk{animation:none}.js [data-r]{opacity:1}}
+
+.menu{touch-action:manipulation;-webkit-tap-highlight-color:transparent;display:none;width:48px;height:48px;border:1px solid var(--ln);border-radius:50%;background:rgba(10,10,11,.6);color:var(--tx);cursor:pointer;align-items:center;justify-content:center;padding:0}
+.menu span,.menu span::before{display:block;width:18px;height:2px;background:currentColor;position:relative;transition:transform .3s}
+.menu span::before{content:"";position:absolute;top:6px}
+.menu[aria-expanded="true"] span{transform:translateY(3px) rotate(45deg)}
+.menu[aria-expanded="true"] span::before{transform:translateY(-6px) rotate(-90deg)}
+.sheet{position:fixed;inset:0;z-index:15;background:rgba(10,10,11,.97);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);display:flex;flex-direction:column;justify-content:center;gap:1.2rem;padding:5rem 1.5rem 2rem;font:500 clamp(1.7rem,8vw,2.8rem) var(--d);opacity:0;visibility:hidden;transition:opacity .4s,visibility .4s}
+.sheet.open{opacity:1;visibility:visible}
+.sheet a{padding:.4rem 0}.sheet small{font:400 .85rem var(--b);color:var(--mu)}
+.wa{position:fixed;right:max(1rem,env(safe-area-inset-right,0px));bottom:calc(1rem + env(safe-area-inset-bottom,0px));z-index:18;width:56px;height:56px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 8px 30px rgba(0,0,0,.5);transition:transform .3s}
+.wa:hover{transform:scale(1.08)}.wa svg{width:30px;height:30px;fill:#fff}
+.foot{align-items:flex-start}.foot nav{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem}.foot a{text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--ln)}.foot a:hover{color:var(--tx);text-decoration-color:var(--red2)}
+.lg{margin:.4rem 0 0;max-width:46ch}
+#legal{display:none;position:relative;z-index:2;padding:9rem 0 6rem;background:var(--bg);min-height:100svh}
+html.legal main{display:none}html.legal #legal{display:block}
+#legal h1{font:700 clamp(2rem,5.5vw,3.8rem)/1.08 var(--d);letter-spacing:-.025em;margin:0 0 1rem;max-width:none}
+#legal h2{font:500 clamp(1.1rem,2.2vw,1.4rem) var(--d);margin:2.6rem 0 .8rem;color:#fff}
+#legal p,#legal li{color:#c4bfb9;max-width:70ch}#legal ul{padding-left:1.2rem}#legal li{margin:.4rem 0}
+#legal a{color:var(--red2);text-decoration:underline;text-underline-offset:3px}
+#legal .back{display:inline-block;margin-bottom:2rem;color:var(--mu);text-decoration:none}
+#legal .upd{color:var(--mu);font-size:.9rem}
+@media(min-width:821px) and (max-width:1100px){.wrap{width:min(1240px,100% - 4rem)}.links{gap:1.2rem}.hero{padding-top:8rem}.row{grid-template-columns:3rem 1fr 1fr;gap:1.5rem}.card{padding:1.6rem}h2{max-width:18ch}}
+@media(orientation:portrait) and (max-width:1100px){.hero{align-items:flex-end;padding-bottom:6rem}}
+@media(max-width:820px){.menu{display:flex}header .btn{display:none}.foot{flex-direction:column}}
+@media(max-width:480px){.wrap{width:calc(100% - 2rem)}.cta{flex-direction:column}.cta .btn{width:100%;justify-content:center}.logo img{height:26px}.eyebrow{letter-spacing:.18em}.card{padding:1.5rem}.grp{gap:2rem;padding-right:2rem}#legal{padding-top:7rem}}
+@media(hover:none){.btn:hover{transform:none}}
+
+.ck{position:fixed;left:max(1rem,env(safe-area-inset-left,0px));right:max(1rem,env(safe-area-inset-right,0px));bottom:calc(1rem + env(safe-area-inset-bottom,0px));z-index:30;max-width:560px;padding:1.25rem 1.4rem;border:1px solid var(--ln);border-radius:20px;background:rgba(18,18,20,.95);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);transform:translateY(140%);opacity:0;visibility:hidden;transition:transform .6s cubic-bezier(.2,.8,.2,1),opacity .4s,visibility .6s}
+.ck.show{transform:none;opacity:1;visibility:visible}
+.ck h2{font:500 1rem var(--d);margin:0 0 .6rem;max-width:none}
+.ck p{margin:0 0 1rem;font-size:.92rem;color:#c4bfb9;line-height:1.55}
+.ck a{color:var(--red2);text-decoration:underline;text-underline-offset:3px}
+.ck .cta{gap:.6rem}.ck .btn{min-height:44px;padding:.6rem 1.2rem;font-size:.9rem}
+.lnk{background:none;border:0;padding:0;font:inherit;color:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--ln)}.lnk:hover{color:var(--tx);text-decoration-color:var(--red2)}
+
+.nr{display:flex;align-items:center;gap:.6rem}
+.snd{width:48px;height:48px;border:1px solid var(--ln);border-radius:50%;background:rgba(10,10,11,.6);color:var(--mu);cursor:pointer;display:flex;align-items:center;justify-content:center;gap:2px;padding:0;transition:color .3s,border-color .3s}
+.snd:hover{color:var(--tx)}.snd i{display:block;width:2px;height:8px;border-radius:2px;background:currentColor}
+.snd[aria-pressed="true"]{color:var(--red2);border-color:var(--red)}
+.snd[aria-pressed="true"] i{animation:eq .9s ease-in-out infinite}.snd i:nth-child(2){animation-delay:.2s}.snd i:nth-child(3){animation-delay:.4s}.snd i:nth-child(4){animation-delay:.1s}
+@keyframes eq{50%{height:18px}}
+@media(prefers-reduced-motion:reduce){.snd[aria-pressed="true"] i{animation:none;height:14px}}
+.glow{position:fixed;left:0;top:0;width:560px;height:560px;margin:-280px 0 0 -280px;border-radius:50%;pointer-events:none;z-index:1;background:radial-gradient(circle,rgba(211,50,44,.30) 0,rgba(211,50,44,.13) 38%,rgba(211,50,44,0) 70%);filter:blur(36px);opacity:0;transition:opacity .8s;will-change:transform}
+@media(hover:none),(prefers-reduced-motion:reduce){.glow{display:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Pular para o conteúdo</a>
+<div id="pre" aria-hidden="true"><small>VSIA SOLUTIONS</small><div><span id="cnt">0</span><b>%</b></div></div>
+<video id="vid" muted loop playsinline aria-hidden="true"></video>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="glow" id="glow" aria-hidden="true"></div>
+<div class="pg" id="pg" aria-hidden="true"></div>
+
+<header><div class="wrap"><nav aria-label="Principal">
+<a class="logo" href="#top" aria-label="VSIA Solutions — início"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MzEgMTYyIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNjIuMTE1IDE1Ny4wMiBMMCAyLjMwOSBMNTIuNDE3IDIuMzA5IEw5Mi4zNjQgMTEzLjE0NyBMOTUuMzY2IDExMy4xNDcgTDEzNC4zOSAyLjMwOSBMMTg2LjU3NiAyLjMwOSBMMTI0LjQ2MSAxNTcuMDIgWiIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0xOTcuOTI4IDEwMy4yMTcgTDE5Ny45MjggMTAxLjgzMiBMMjQxLjMzOSAxMDEuODMyIEwyNDEuMzM5IDEwNi42ODEgQzI0MS4zMzkgMTE3LjA3MiAyNDUuMDM0IDExOS44NDMgMjc0LjEyOCAxMTkuODQzIEMzMDAuNDUyIDExOS44NDMgMzAzLjIyMyAxMTcuNzY1IDMwMy4yMjMgMTEwLjgzNyBDMzAzLjIyMyAxMDUuMjk1IDMwMC4yMjEgMTAyLjk4NiAyODcuNTIxIDEwMS4zNyBMMjM5LjAzIDk0LjkwNCBDMjEwLjE2NiA5MC45NzkgMTk1LjYxOSA3NS41MDggMTk1LjYxOSA1MC41NjkgQzE5NS42MTkgMjUuODYyIDIxNC43ODQgMCAyNzAuNjY1IDAgQzMxOS44NDkgMCAzNDMuNDAyIDIxLjQ3NSAzNDMuNDAyIDU2LjExMSBMMzQzLjQwMiA1Ny40OTcgTDI5OS45OSA1Ny40OTcgTDI5OS45OSA1NC4wMzMgQzI5OS45OSA0Mi45NDkgMjk1LjE0MSAzOS4yNTUgMjY2LjA0NiAzOS4yNTUgQzI0My44NzkgMzkuMjU1IDIzOS4wMyA0Mi4yNTcgMjM5LjAzIDQ4Ljk1MyBDMjM5LjAzIDUzLjgwMiAyNDEuODAxIDU2LjExMSAyNTAuMTEzIDU3LjI2NiBMMjk4LjYwNSA2NC40MjQgQzMzNi40NzQgNjkuOTY2IDM0Ni42MzQgODkuMzYyIDM0Ni42MzQgMTA5LjIyMSBDMzQ2LjYzNCAxMzUuNzc1IDMyNi4zMTQgMTU5LjMyOSAyNzQuMTI4IDE1OS4zMjkgQzIyNi43OTIgMTU5LjMyOSAxOTcuOTI4IDE0Mi40NzIgMTk3LjkyOCAxMDMuMjE3IFoiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMzcyLjg2MiA3Ljg3NyBDMzcyLjg2MyA3LjcyMiAzNzIuODgzIDcuNTggMzcyLjkyNyA3LjQzMiBDMzczLjI3NSA2LjI2NyAzNzUuMTYgMS4xOTYgMzgxLjMyNyAyLjQxNyBDMzg4LjI4MSAzLjc5NSA0MDguNTUzIDE1LjQwNyA0MDguNTUzIDE1LjQwNyBDNDA4LjU1MyAxNS40MDcgNDEyLjc1MiAxNy4xNzkgNDEyLjY4NiAyNC41MjYgQzQxMi42MjMgMzEuNjI5IDQxMi4wMDggMTMzLjE4NyA0MTEuOTY3IDEzOS45NjUgQzQxMS45NjUgMTQwLjIxMyA0MTEuOTEyIDE0MC40NDYgNDExLjgwNSAxNDAuNjY5IEM0MTAuODc0IDE0Mi42MTMgNDA1LjY3OSAxNTIuMTgxIDM5MS42NzIgMTU2Ljk0MiBDMzkwLjQ0IDE1Ny4zNjEgMzg5LjE0MSAxNTcuNTc1IDM4Ny44NCAxNTcuNTc1IEwzODAuNDA4IDE1Ny41NzUgQzM4MC40MDggMTU3LjU3NSAzNzIuMDc2IDE1Ny41NzUgMzcyLjE0MiAxNTEuMTQ1IEMzNzIuMjA2IDE0NC44NjMgMzcyLjgzNCAxMy44NTggMzcyLjg2MiA3Ljg3NyBaIi8+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTYyNi44MjMgMTEyLjYzNSBDNjIyLjgyMSAxMDguNDM2IDYwNC41ODIgOTYuMTY4IDYwNC41ODIgOTYuMTY4IEw1OTAuODcxIDk2LjE2OCBDNTkwLjg3MSA5Ni4xNjggNTg4LjU3NSA5Ni40MyA1ODYuNjA3IDkzLjE1IEM1ODQuNjM4IDg5Ljg2OSA1NDcuNjM3IDIwLjMyOCA1NDcuNjM3IDIwLjMyOCBDNTQ3LjYzNyAyMC4zMjggNTQ2LjMyNSAxNC43NTEgNTM2LjQxOCAxMS40NzEgQzUyNi41MTIgOC4xOTEgNTA2Ljk2MSAxLjA0IDUwNi45NjEgMS4wNCBDNTA2Ljk2MSAxLjA0IDUwMy4xNTYgLTAuMjA3IDQ5OC44MjYgMi44MTEgQzQ5NC40OTYgNS44MjkgNDk0LjQ5NiA4LjY1IDQ5NC40OTYgOC42NSBDNDk0LjQ5NiA4LjY1IDQ5NC40OTYgMTkuNDc1IDQ4OC40NjEgMzIuMDcxIEM0ODIuOTI1IDQzLjYyNCA0MzEuMzU5IDEzMS4xNzcgNDIyLjg1OCAxNDUuNTk1IEM0MjIuMjEgMTQ2LjY5NSA0MjIuNTk5IDE0OC4xMTEgNDIzLjcxOCAxNDguNzI1IEw0MzguOTk0IDE1Ny4xMTUgQzQzOC45OTQgMTU3LjExNSA0NTAuODAzIDE2MS44MzkgNDU3LjEwMSAxNTMuOTAxIEM0NjMuMzk5IDE0NS45NjIgNDczLjY5OSAxMjkuMTAyIDQ3My42OTkgMTI5LjEwMiBMNTk3LjIzNCAxNjAuMDY3IEw2MTMuMDQ1IDE2MC4wNjcgQzYxMy4wNDUgMTYwLjA2NyA2MjIuNTU4IDE1NS43MzggNjE4LjYyMiAxNDguNjUyIEM2MTQuNjg2IDE0MS41NjcgNTk5LjQ2NSAxMTYuOTY1IDU5OS40NjUgMTE2Ljk2NSBMNjIzLjczOSAxMTcuNjg2IEM2MjMuNzM5IDExNy42ODYgNjMwLjgyNSAxMTYuODMzIDYyNi44MjMgMTEyLjYzNSBaIE01MTguMjkgNDYuMjYxIEw1NDIuMjg5IDg2Ljk2MyBDNTQyLjI4OSA4Ni45NjMgNTQ1Ljc0NSA4OS45MzggNTQwLjc1MyA5MC4zMjIgQzUzNS43NjEgOTAuNzA2IDQ5MC4wNjcgOTYuMzcgNDkwLjA2NyA5Ni4zNyBDNDkwLjA2NyA5Ni4zNyA1MTYuOTQ2IDQ1Ljk3MyA1MTguMjkgNDYuMjYxIFogTTU1MC40NDggMTM0Ljk2IEM1MTkuOTIyIDEzMi44NDggNDc1LjY2OCAxMjQuMzA1IDQ3NS42NjggMTI0LjMwNSBDNDc3LjQ5MiAxMjMuNDQxIDU0NS45MzMgMTE3LjY4MSA1NTcuNjQ4IDExNy42ODEgQzU2Ny4yIDExNy42ODEgNTcwLjAzMiAxMjQuMzA1IDU3MC4wMzIgMTI0LjMwNSBMNTc3LjMyNyAxMzYuNCBDNTc3LjMyNyAxMzYuNCA1NzAuNTEyIDEzNi41OTIgNTUwLjQ0OCAxMzQuOTYgWiIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik01OTMuMjY3IDE3LjMyNSBMNTg5LjcxNiAxNy4zMjUgTDU4OS43MTYgMy41MzMgTDU4NS4xNjkgMy41MzMgTDU4NS4xNjkgMC41NzcgTDU5Ny44MTUgMC41NzcgTDU5Ny44MTUgMy41MzMgTDU5My4yNjcgMy41MzMgWiIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik02MDcuMjk1IDE3LjMyNSBMNjAzLjI2MSA0LjE4NiBMNjAzLjE1OSA0LjE4NiBDNjAzLjE3MyA0LjQ5OSA2MDMuMTk5IDQuOTcxIDYwMy4yMzMgNS42MDEgQzYwMy4yNjcgNi4yMzEgNjAzLjI5OSA2LjkwMSA2MDMuMzMxIDcuNjExIEM2MDMuMzYxIDguMzIxIDYwMy4zNzcgOC45NjMgNjAzLjM3NyA5LjUzNiBMNjAzLjM3NyAxNy4zMjUgTDYwMC4yMDMgMTcuMzI1IEw2MDAuMjAzIDAuNTc3IEw2MDUuMDM4IDAuNTc3IEw2MDkuMDAxIDEzLjM4NSBMNjA5LjA3IDEzLjM4NSBMNjEzLjI3NCAwLjU3NyBMNjE4LjEwOCAwLjU3NyBMNjE4LjEwOCAxNy4zMjUgTDYxNC43OTcgMTcuMzI1IEw2MTQuNzk3IDkuMzk4IEM2MTQuNzk3IDguODcxIDYxNC44MDcgOC4yNjQgNjE0LjgyNiA3LjU3NyBDNjE0Ljg0NSA2Ljg5IDYxNC44NyA2LjIzNCA2MTQuOTAxIDUuNjEyIEM2MTQuOTMxIDQuOTkgNjE0Ljk1NCA0LjUyMyA2MTQuOTY5IDQuMjA5IEw2MTQuODY2IDQuMjA5IEw2MTAuNTQ3IDE3LjMyNSBaIi8+PC9zdmc+" alt="VSIA" width="631" height="162"></a>
+<div class="links"><a href="#servicos">Serviços</a><a href="#processo">Processo</a><a href="#manifesto">Manifesto</a></div>
+<div class="nr"><a class="btn" href="#contato">Falar com a VSIA</a>
+<button class="snd" type="button" aria-pressed="false" aria-label="Ativar som"><i></i><i></i><i></i><i></i></button>
+<button class="menu" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="sheet"><span></span></button></div>
+</nav></div></header>
+<div class="sheet" id="sheet"><a href="#servicos">Serviços</a><a href="#processo">Processo</a><a href="#manifesto">Manifesto</a><a href="#contato">Contato</a><a href="#privacidade"><small>Privacidade e LGPD</small></a></div>
+<a class="wa" href="https://wa.me/5516992215264?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20VSIA%20Solutions." target="_blank" rel="noopener noreferrer" aria-label="Falar com a VSIA no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.1 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4.1c1.7.7 2.4.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg></a>
+
+<main id="main">
+<section class="hero" id="top"><div class="wrap">
+<p class="eyebrow" data-r>Soluções com IA · São Paulo, SP</p>
+<h1 aria-label="Marcas que pensam. Mundos que se movem."><span class="w"><span>Marcas</span></span> <span class="w"><span>que</span></span> <span class="w"><span>pensam.</span></span> <span class="w"><span><em>Mundos</em></span></span> <span class="w"><span>que</span></span> <span class="w"><span>se</span></span> <span class="w"><span>movem.</span></span></h1>
+<p class="lead" data-r>Unimos direção criativa e inteligência artificial para criar marcas, vídeos, sites, apps e experiências 3D que parecem de outro nível.</p>
+<div class="cta" data-r><a class="btn" href="#contato">Iniciar um projeto</a><a class="btn ghost" href="#servicos">Ver serviços</a></div>
+<div class="scrollhint" aria-hidden="true">Role</div>
+</div></section>
+
+<div class="mq" aria-hidden="true"><div class="trk"><div class="grp"><span>Marcas</span><i>●</i><span>Criativos</span><i>●</i><span>Vídeos</span><i>●</i><span>Site</span><i>●</i><span>App</span><i>●</i><span>3D</span><i>●</i><span>Soluções com IA</span><i>●</i></div><div class="grp"><span>Marcas</span><i>●</i><span>Criativos</span><i>●</i><span>Vídeos</span><i>●</i><span>Site</span><i>●</i><span>App</span><i>●</i><span>3D</span><i>●</i><span>Soluções com IA</span><i>●</i></div><div class="grp"><span>Marcas</span><i>●</i><span>Criativos</span><i>●</i><span>Vídeos</span><i>●</i><span>Site</span><i>●</i><span>App</span><i>●</i><span>3D</span><i>●</i><span>Soluções com IA</span><i>●</i></div><div class="grp"><span>Marcas</span><i>●</i><span>Criativos</span><i>●</i><span>Vídeos</span><i>●</i><span>Site</span><i>●</i><span>App</span><i>●</i><span>3D</span><i>●</i><span>Soluções com IA</span><i>●</i></div></div></div>
+
+<section id="servicos"><div class="wrap">
+<p class="eyebrow" data-r>Serviços</p>
+<h2 data-r>Seis frentes. Um padrão.</h2>
+<div class="list">
+<div class="row" data-r><span>01</span><h3>Marcas</h3><p>Criamos identidade visual, naming e sistemas de marca com direção humana e velocidade de IA, do conceito ao manual de uso.</p></div>
+<div class="row" data-r><span>02</span><h3>Criativos</h3><p>Campanhas, posts e peças gráficas com assinatura própria, produzidas em escala para manter a marca viva em todos os canais.</p></div>
+<div class="row" data-r><span>03</span><h3>Vídeos</h3><p>Filmes institucionais, reels e motion design com produção acelerada por IA e acabamento cinematográfico.</p></div>
+<div class="row" data-r><span>04</span><h3>Site</h3><p>Sites imersivos, rápidos e acessíveis, desenhados sob medida, com animações e 3D que funcionam em qualquer dispositivo.</p></div>
+<div class="row" data-r><span>05</span><h3>App</h3><p>Apps e webapps com inteligência artificial, do protótipo ao lançamento, com design e código pensados para crescer.</p></div>
+<div class="row" data-r><span>06</span><h3>3D</h3><p>Objetos, cenas e experiências em tempo real para web, vídeo e produto, com materiais e iluminação de alto nível.</p></div>
+</div></div></section>
+
+<section id="processo"><div class="wrap">
+<p class="eyebrow" data-r>Processo</p>
+<h2 data-r>IA acelera. Criatividade decide.</h2>
+<div class="steps">
+<div class="card" data-r><b>01</b><h3>Estratégia</h3><p>Entendemos negócio, público e posicionamento antes de qualquer pixel.</p></div>
+<div class="card" data-r><b>02</b><h3>Direção criativa</h3><p>Definimos linguagem, paleta, tipografia e movimento com um ponto de vista claro.</p></div>
+<div class="card" data-r><b>03</b><h3>Produção com IA</h3><p>Geramos, refinamos e entregamos com curadoria humana em cada etapa.</p></div>
+</div></div></section>
+
+<section id="manifesto"><div class="wrap">
+<p class="eyebrow">Manifesto</p>
+<p class="man" id="man">Não vendemos templates. Construímos marcas com ponto de vista, movimento com intenção e tecnologia de ponta.</p>
+</div></section>
+
+<section id="contato" class="end"><div class="wrap">
+<p class="eyebrow" data-r>Contato</p>
+<h2 data-r>Vamos criar algo fora da curva?</h2>
+<div class="cta" data-r><a class="btn" href="https://wa.me/5516992215264?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20VSIA%20Solutions." target="_blank" rel="noopener noreferrer">Chamar no WhatsApp</a><a class="btn ghost" href="#servicos">Rever serviços</a></div>
+</div></section>
+</main>
+
+
+<section id="legal" aria-labelledby="lt"><div class="wrap">
+<a class="back" href="#top">← Voltar ao site</a>
+<p class="eyebrow">Privacidade e LGPD</p>
+<h1 id="lt">Política de Privacidade</h1>
+<p class="upd">Última atualização: 26 de outubro de 2026</p>
+
+<h2>1. O que é a LGPD</h2>
+<p>A Lei Geral de Proteção de Dados Pessoais (LGPD), Lei nº 13.709, de 14 de agosto de 2018, regula o tratamento de dados pessoais por pessoas físicas e jurídicas, inclusive nos meios digitais. Seu objetivo é proteger os direitos fundamentais de liberdade e de privacidade e o livre desenvolvimento da personalidade da pessoa natural. Está em vigor desde setembro de 2020, e a fiscalização e a aplicação de sanções cabem à Autoridade Nacional de Proteção de Dados (ANPD).</p>
+
+<h2>2. Princípios que seguimos (art. 6º)</h2>
+<ul><li>Finalidade, adequação e necessidade: tratamos apenas o que é preciso, para propósitos informados.</li><li>Livre acesso, qualidade dos dados e transparência: você pode consultar e corrigir seus dados.</li><li>Segurança e prevenção: adotamos medidas para evitar acessos indevidos e incidentes.</li><li>Não discriminação, responsabilização e prestação de contas.</li></ul>
+
+<h2>3. Quem é o controlador</h2>
+<p>VSIA Solutions, estúdio de soluções com IA sediado em São Paulo, SP. Para qualquer assunto sobre dados pessoais, inclusive o contato com o encarregado (art. 41), fale conosco pelo WhatsApp <a href="https://wa.me/5516992215264?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20VSIA%20Solutions." target="_blank" rel="noopener noreferrer">(16) 99221-5264</a>.</p>
+
+<h2>4. Quais dados tratamos</h2>
+<ul><li>Este site não exige cadastro e não usa cookies de publicidade nem ferramentas de análise ou rastreamento.</li><li>Ao clicar em um botão de WhatsApp, você é levado ao aplicativo, e os dados que você informar (nome, número de telefone e conteúdo da mensagem) são tratados por nós para responder ao seu contato. O WhatsApp (Meta) possui política própria.</li><li>Para exibir o site, carregamos fontes do Google Fonts, que pode receber dados técnicos de conexão, como o endereço IP. As bibliotecas do site são servidas pela própria hospedagem, que também registra dados técnicos de acesso (como IP e data/hora) por motivos de segurança e operação.</li></ul>
+
+<h2>5. Finalidades e bases legais (art. 7º)</h2>
+<p>Usamos seus dados para responder a solicitações, enviar propostas e executar procedimentos preliminares de contratação pedidos por você (art. 7º, V), com base no consentimento quando aplicável (art. 7º, I) e no legítimo interesse, respeitados seus direitos (art. 7º, IX). Não vendemos dados pessoais.</p>
+
+<h2>6. Compartilhamento</h2>
+<p>Só compartilhamos dados quando necessário para prestar o serviço contratado, com fornecedores que seguem a legislação, ou para cumprir obrigação legal ou ordem de autoridade.</p>
+
+<h2>7. Por quanto tempo guardamos</h2>
+<p>Mantemos os dados pelo tempo necessário para cumprir a finalidade do contato e as obrigações legais. Depois disso, eles são eliminados ou anonimizados.</p>
+
+<h2>8. Seus direitos (art. 18)</h2>
+<ul><li>Confirmação de que tratamos seus dados e acesso a eles.</li><li>Correção de dados incompletos, inexatos ou desatualizados.</li><li>Anonimização, bloqueio ou eliminação de dados desnecessários ou tratados em desconformidade.</li><li>Portabilidade, informação sobre compartilhamento e sobre a possibilidade de não consentir.</li><li>Revogação do consentimento e eliminação dos dados tratados com base nele.</li></ul>
+<p>Para exercer qualquer direito, envie sua solicitação pelo WhatsApp. Você também pode reclamar à ANPD.</p>
+
+<h2>9. Segurança</h2>
+<p>Adotamos medidas técnicas e administrativas razoáveis para proteger os dados contra acessos não autorizados, perda ou alteração (art. 46). Nenhum sistema é totalmente imune a riscos, e comunicaremos incidentes relevantes conforme a lei.</p>
+
+<h2>10. Crianças e adolescentes</h2>
+<p>Este site não é direcionado a crianças. O tratamento de dados de crianças e adolescentes deve atender ao seu melhor interesse (art. 14).</p>
+
+<h2>11. Alterações desta política</h2>
+<p>Podemos atualizar esta política a qualquer momento. A data da última atualização aparece no topo desta página.</p>
+
+<h2>12. Cookies e armazenamento local</h2>
+<p>Ao entrar no site, você pode aceitar ou recusar cookies não essenciais. Hoje o site não usa cookies de análise nem de publicidade; guardamos apenas, no seu navegador, a escolha que você fez (armazenamento essencial). Se no futuro ativarmos ferramentas de análise ou marketing, elas só funcionarão com o seu consentimento (art. 7º, I). Você pode mudar de ideia a qualquer momento em “Preferências de cookies”, no rodapé.</p>
+
+<h2>13. Fontes oficiais</h2>
+<ul><li><a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank" rel="noopener noreferrer">Texto da Lei nº 13.709/2018 (Planalto)</a></li><li><a href="https://www.gov.br/anpd" target="_blank" rel="noopener noreferrer">Autoridade Nacional de Proteção de Dados (ANPD)</a></li></ul>
+</div></section>
+<div class="ck" id="ck" role="region" aria-label="Aviso de cookies"><h2>Sua privacidade</h2><p>Usamos apenas o armazenamento essencial para lembrar esta escolha. Cookies de análise ou publicidade só serão ativados se você aceitar. Saiba mais na <a href="#privacidade">Política de Privacidade e LGPD</a>.</p><div class="cta"><button class="btn" type="button" id="ckA">Aceitar</button><button class="btn ghost" type="button" id="ckR">Recusar não essenciais</button></div></div>
+<footer><div class="wrap foot"><div><span>© 2026 VSIA Solutions™ · São Paulo, SP</span><p class="lg">Tratamos dados pessoais conforme a Lei Geral de Proteção de Dados (Lei nº 13.709/2018).</p></div><nav aria-label="Rodapé"><a href="#privacidade">Política de Privacidade e LGPD</a><button class="lnk" type="button" id="ckO">Preferências de cookies</button><a href="https://wa.me/5516992215264?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20VSIA%20Solutions." target="_blank" rel="noopener noreferrer">WhatsApp (16) 99221-5264</a></nav></div></footer>
+
+<script src="vendor/three.min.js" integrity="sha384-CI3ELBVUz9XQO+97x6nwMDPosPR5XvsxW2ua7N1Xeygeh1IxtgqtCkGfQY9WWdHu"></script>
+<script src="vendor/gsap.min.js" integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt"></script>
+<script src="vendor/ScrollTrigger.min.js" integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d"></script>
+<script src="vendor/lenis.min.js" integrity="sha384-B2WBjDzEjJpYvhmi2UyEn7rektqkf5suS6sNoyyrf0EBAwBHdkiXxIlU0V5Ru2ed"></script>
+<script>addEventListener("load",function(){if(!window.THREE||!window.gsap||!window.ScrollTrigger){document.documentElement.classList.remove("js");var p=document.getElementById("pre");if(p)p.remove()}})</script>
+<script>
+(function(){
+var VIDEO_SRC=""; /* cole aqui o MP4 de fundo (opcional) */
+var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+var mobile=innerWidth<820;
+if(VIDEO_SRC&&!reduce){var v=document.getElementById('vid');v.src=VIDEO_SRC;v.classList.add('on');v.play().catch(function(){})}
+
+/* ---------- Smooth scroll ---------- */
+gsap.registerPlugin(ScrollTrigger);
+if(!reduce&&window.Lenis){var lenis=new Lenis({lerp:.09});lenis.on('scroll',ScrollTrigger.update);gsap.ticker.add(function(t){lenis.raf(t*1000)});gsap.ticker.lagSmoothing(0);
+document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();var H=document.documentElement;if(H.classList.contains('legal')){H.classList.remove('legal');try{history.replaceState(null,'',location.pathname+location.search)}catch(x){}}ScrollTrigger.refresh();if(sh&&sh.classList.contains('open'))tg(false);lenis.scrollTo(t,{offset:-20,force:true})}})})}
+
+/* ---------- Rotas (página LGPD) e menu ---------- */
+function route(){var l=location.hash==='#privacidade';document.documentElement.classList.toggle('legal',l);
+ try{if(l){scrollTo(0,0)}else if(location.hash.length>1){var t=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(t&&['top','servicos','processo','manifesto','contato'].indexOf(t.id)>-1)t.scrollIntoView()}}catch(x){}
+ ScrollTrigger.refresh()}
+addEventListener('hashchange',route);route();
+var mb=document.querySelector('.menu'),sh=document.getElementById('sheet');
+function tg(o){if(!o&&typeof lenis!=='undefined'){lenis.start()}sh.classList.toggle('open',o);mb.setAttribute('aria-expanded',o);mb.setAttribute('aria-label',o?'Fechar menu':'Abrir menu');document.body.style.overflow=o?'hidden':'';if(typeof lenis!=='undefined'){o?lenis.stop():lenis.start()}}
+mb.addEventListener('click',function(){tg(!sh.classList.contains('open'))});
+sh.addEventListener('click',function(e){if(e.target.closest('a'))tg(false)});
+addEventListener('keydown',function(e){if(e.key==='Escape')tg(false)});addEventListener('resize',function(){if(innerWidth>820)tg(false)});
+
+/* ---------- 3D: logo VSIA (V) em metal + vidro ---------- */
+var group=new THREE.Group(),mx=0,my=0,ready=false;
+try{
+var cv=document.getElementById('bg');
+var R=new THREE.WebGLRenderer({canvas:cv,antialias:!mobile,alpha:true,powerPreference:'high-performance'});
+R.setPixelRatio(Math.min(devicePixelRatio,mobile?1.5:2));R.setSize(innerWidth,innerHeight);
+var S=new THREE.Scene(),C=new THREE.PerspectiveCamera(38,innerWidth/innerHeight,.1,100);C.position.z=7;
+var es=new THREE.Scene();
+es.add(new THREE.Mesh(new THREE.SphereGeometry(20,16,16),new THREE.MeshBasicMaterial({color:0x0f0c0d,side:THREE.BackSide})));
+[[0xe8453e,0,6,-8,12,3],[0xffffff,-9,2,4,3,10],[0xff5a52,9,-2,3,3,8],[0xffffff,0,-8,2,14,2],[0xffffff,6,5,5,5,5]].forEach(function(p){var m=new THREE.Mesh(new THREE.PlaneGeometry(p[4],p[5]),new THREE.MeshBasicMaterial({color:p[0],side:THREE.DoubleSide}));m.position.set(p[1],p[2],p[3]);m.lookAt(0,0,0);es.add(m)});
+var pm=new THREE.PMREMGenerator(R);S.environment=pm.fromScene(es,.03).texture;
+
+var SH=[{"o":[[-1.446,-0.434],[-1.8,0.449],[-1.501,0.449],[-1.273,-0.183],[-1.256,-0.183],[-1.033,0.449],[-0.736,0.449],[-1.09,-0.434]],"h":[]},{"o":[[-0.671,-0.127],[-0.671,-0.119],[-0.423,-0.119],[-0.423,-0.147],[-0.422,-0.163],[-0.42,-0.177],[-0.414,-0.189],[-0.405,-0.199],[-0.392,-0.206],[-0.374,-0.212],[-0.35,-0.217],[-0.319,-0.219],[-0.282,-0.221],[-0.236,-0.222],[-0.195,-0.221],[-0.161,-0.22],[-0.134,-0.218],[-0.113,-0.215],[-0.097,-0.211],[-0.085,-0.205],[-0.078,-0.199],[-0.073,-0.191],[-0.071,-0.181],[-0.07,-0.17],[-0.071,-0.161],[-0.072,-0.153],[-0.076,-0.146],[-0.081,-0.14],[-0.088,-0.135],[-0.097,-0.13],[-0.108,-0.126],[-0.122,-0.122],[-0.14,-0.119],[-0.16,-0.116],[-0.436,-0.079],[-0.483,-0.071],[-0.525,-0.058],[-0.562,-0.042],[-0.595,-0.022],[-0.622,0.002],[-0.644,0.03],[-0.662,0.06],[-0.674,0.095],[-0.681,0.133],[-0.684,0.174],[-0.681,0.216],[-0.67,0.258],[-0.652,0.298],[-0.625,0.336],[-0.589,0.371],[-0.544,0.401],[-0.489,0.426],[-0.423,0.446],[-0.345,0.458],[-0.256,0.462],[-0.176,0.458],[-0.105,0.448],[-0.042,0.43],[0.012,0.406],[0.057,0.376],[0.094,0.34],[0.123,0.298],[0.143,0.251],[0.155,0.199],[0.159,0.142],[0.159,0.134],[-0.088,0.134],[-0.088,0.154],[-0.089,0.172],[-0.093,0.187],[-0.099,0.2],[-0.109,0.211],[-0.123,0.22],[-0.142,0.227],[-0.167,0.232],[-0.198,0.235],[-0.236,0.238],[-0.282,0.238],[-0.317,0.238],[-0.347,0.236],[-0.371,0.233],[-0.391,0.23],[-0.407,0.225],[-0.418,0.219],[-0.427,0.212],[-0.432,0.203],[-0.435,0.194],[-0.436,0.183],[-0.436,0.175],[-0.434,0.168],[-0.432,0.162],[-0.428,0.156],[-0.422,0.151],[-0.416,0.147],[-0.408,0.143],[-0.398,0.14],[-0.386,0.138],[-0.373,0.135],[-0.096,0.095],[-0.036,0.083],[0.015,0.067],[0.058,0.047],[0.093,0.024],[0.122,-0.003],[0.143,-0.031],[0.159,-0.062],[0.17,-0.094],[0.176,-0.127],[0.178,-0.161],[0.174,-0.206],[0.163,-0.249],[0.145,-0.29],[0.118,-0.327],[0.082,-0.361],[0.038,-0.39],[-0.015,-0.414],[-0.079,-0.432],[-0.152,-0.443],[-0.236,-0.447],[-0.314,-0.444],[-0.385,-0.435],[-0.449,-0.42],[-0.506,-0.399],[-0.555,-0.371],[-0.596,-0.336],[-0.628,-0.295],[-0.651,-0.246],[-0.666,-0.19],[-0.671,-0.127]],"h":[]},{"o":[[0.327,0.417],[0.327,0.418],[0.327,0.419],[0.328,0.419],[0.328,0.42],[0.329,0.422],[0.33,0.426],[0.332,0.43],[0.335,0.435],[0.339,0.439],[0.344,0.443],[0.35,0.446],[0.357,0.449],[0.366,0.449],[0.376,0.448],[0.39,0.444],[0.407,0.438],[0.427,0.429],[0.447,0.419],[0.468,0.408],[0.488,0.398],[0.505,0.389],[0.519,0.381],[0.528,0.376],[0.531,0.374],[0.532,0.374],[0.533,0.373],[0.536,0.371],[0.539,0.368],[0.543,0.364],[0.546,0.359],[0.55,0.352],[0.552,0.344],[0.554,0.334],[0.554,0.322],[0.554,0.295],[0.554,0.242],[0.553,0.169],[0.553,0.084],[0.552,-0.008],[0.552,-0.1],[0.551,-0.185],[0.551,-0.257],[0.551,-0.31],[0.55,-0.336],[0.55,-0.337],[0.55,-0.338],[0.55,-0.339],[0.55,-0.34],[0.549,-0.34],[0.547,-0.345],[0.543,-0.352],[0.537,-0.36],[0.53,-0.37],[0.52,-0.381],[0.508,-0.392],[0.494,-0.403],[0.477,-0.414],[0.457,-0.424],[0.435,-0.433],[0.432,-0.434],[0.43,-0.435],[0.428,-0.435],[0.426,-0.436],[0.424,-0.436],[0.422,-0.436],[0.419,-0.437],[0.417,-0.437],[0.415,-0.437],[0.413,-0.437],[0.37,-0.437],[0.369,-0.437],[0.365,-0.437],[0.36,-0.436],[0.354,-0.435],[0.347,-0.432],[0.34,-0.429],[0.333,-0.424],[0.328,-0.418],[0.324,-0.41],[0.323,-0.4],[0.323,-0.37],[0.324,-0.305],[0.324,-0.214],[0.325,-0.107],[0.325,0.009],[0.326,0.125],[0.326,0.232],[0.327,0.323],[0.327,0.387],[0.327,0.417]],"h":[]},{"o":[[1.776,-0.18],[1.767,-0.172],[1.754,-0.162],[1.739,-0.15],[1.722,-0.137],[1.704,-0.125],[1.687,-0.113],[1.672,-0.102],[1.66,-0.094],[1.652,-0.089],[1.649,-0.087],[1.571,-0.087],[1.57,-0.087],[1.568,-0.086],[1.566,-0.086],[1.563,-0.085],[1.56,-0.083],[1.557,-0.081],[1.554,-0.078],[1.55,-0.074],[1.547,-0.069],[1.538,-0.053],[1.519,-0.019],[1.494,0.029],[1.464,0.085],[1.431,0.145],[1.399,0.205],[1.37,0.26],[1.346,0.305],[1.33,0.335],[1.324,0.346],[1.324,0.347],[1.323,0.35],[1.321,0.354],[1.318,0.359],[1.314,0.364],[1.307,0.371],[1.299,0.378],[1.289,0.384],[1.276,0.391],[1.26,0.397],[1.242,0.403],[1.221,0.41],[1.199,0.418],[1.177,0.426],[1.155,0.433],[1.135,0.441],[1.118,0.447],[1.104,0.452],[1.096,0.455],[1.092,0.456],[1.09,0.457],[1.087,0.457],[1.083,0.458],[1.078,0.458],[1.073,0.457],[1.067,0.456],[1.06,0.454],[1.053,0.451],[1.046,0.446],[1.039,0.441],[1.034,0.436],[1.03,0.431],[1.027,0.427],[1.024,0.423],[1.023,0.42],[1.022,0.417],[1.021,0.415],[1.021,0.413],[1.021,0.411],[1.021,0.406],[1.02,0.397],[1.019,0.386],[1.017,0.373],[1.014,0.357],[1.009,0.34],[1.004,0.321],[0.996,0.3],[0.987,0.279],[0.97,0.247],[0.94,0.194],[0.901,0.126],[0.855,0.046],[0.806,-0.039],[0.756,-0.124],[0.709,-0.205],[0.667,-0.276],[0.634,-0.332],[0.613,-0.369],[0.612,-0.37],[0.611,-0.372],[0.611,-0.374],[0.611,-0.377],[0.611,-0.378],[0.612,-0.38],[0.613,-0.382],[0.614,-0.384],[0.616,-0.385],[0.617,-0.386],[0.705,-0.434],[0.706,-0.435],[0.712,-0.437],[0.72,-0.439],[0.731,-0.441],[0.743,-0.442],[0.756,-0.442],[0.77,-0.44],[0.783,-0.435],[0.796,-0.427],[0.808,-0.416],[0.819,-0.401],[0.832,-0.384],[0.844,-0.365],[0.857,-0.347],[0.869,-0.328],[0.88,-0.311],[0.889,-0.296],[0.896,-0.285],[0.901,-0.277],[0.903,-0.274],[1.607,-0.451],[1.698,-0.451],[1.699,-0.45],[1.703,-0.448],[1.709,-0.445],[1.715,-0.44],[1.722,-0.434],[1.728,-0.426],[1.732,-0.418],[1.735,-0.408],[1.734,-0.398],[1.729,-0.386],[1.721,-0.371],[1.709,-0.352],[1.696,-0.329],[1.681,-0.305],[1.666,-0.28],[1.652,-0.257],[1.639,-0.237],[1.629,-0.22],[1.623,-0.209],[1.62,-0.205],[1.759,-0.209],[1.76,-0.209],[1.763,-0.209],[1.767,-0.208],[1.771,-0.206],[1.776,-0.204],[1.78,-0.201],[1.782,-0.197],[1.783,-0.193],[1.781,-0.187],[1.776,-0.18]],"h":[[[1.157,0.198],[1.294,-0.034],[1.296,-0.036],[1.297,-0.038],[1.299,-0.04],[1.3,-0.043],[1.301,-0.045],[1.3,-0.048],[1.297,-0.05],[1.292,-0.052],[1.285,-0.053],[1.27,-0.055],[1.244,-0.058],[1.21,-0.062],[1.171,-0.066],[1.13,-0.071],[1.09,-0.076],[1.053,-0.081],[1.023,-0.084],[1.003,-0.087],[0.996,-0.088],[1.0,-0.08],[1.012,-0.058],[1.029,-0.026],[1.05,0.013],[1.074,0.056],[1.097,0.098],[1.119,0.137],[1.137,0.169],[1.151,0.191],[1.157,0.198]],[[1.34,-0.308],[1.286,-0.303],[1.229,-0.297],[1.171,-0.289],[1.115,-0.281],[1.062,-0.273],[1.014,-0.265],[0.973,-0.258],[0.941,-0.252],[0.921,-0.248],[0.914,-0.247],[0.928,-0.245],[0.96,-0.241],[1.007,-0.237],[1.064,-0.232],[1.126,-0.226],[1.191,-0.221],[1.253,-0.217],[1.308,-0.213],[1.352,-0.21],[1.382,-0.209],[1.397,-0.21],[1.41,-0.213],[1.421,-0.217],[1.43,-0.223],[1.437,-0.228],[1.443,-0.234],[1.447,-0.239],[1.45,-0.243],[1.452,-0.246],[1.452,-0.247],[1.494,-0.316],[1.493,-0.316],[1.489,-0.316],[1.482,-0.316],[1.473,-0.316],[1.46,-0.315],[1.444,-0.315],[1.424,-0.314],[1.4,-0.312],[1.373,-0.31],[1.34,-0.308]]]}];
+var logo=new THREE.Group(),mat=new THREE.MeshPhysicalMaterial({color:0xd3322c,metalness:.85,roughness:.22,clearcoat:1,clearcoatRoughness:.08,envMapIntensity:1.5});
+function toV2(a){return a.map(function(p){return new THREE.Vector2(p[0],p[1])})}
+SH.forEach(function(d){var sp=new THREE.Shape(toV2(d.o));d.h.forEach(function(h){sp.holes.push(new THREE.Path(toV2(h)))});
+logo.add(new THREE.Mesh(new THREE.ExtrudeGeometry(sp,{depth:.28,bevelEnabled:true,bevelThickness:.035,bevelSize:.03,bevelSegments:4,curveSegments:6}),mat))});
+logo.children.forEach(function(m){m.position.z=-.14});
+group.add(logo);
+var ring=new THREE.Mesh(new THREE.TorusGeometry(2.2,.012,12,160),new THREE.MeshBasicMaterial({color:0xff5a52,transparent:true,opacity:.7}));ring.rotation.x=1.2;ring.scale.setScalar(1.1);group.add(ring);
+var ico=new THREE.Mesh(new THREE.IcosahedronGeometry(2.7,1),new THREE.MeshPhysicalMaterial({color:0xffffff,metalness:0,roughness:.05,transmission:.9,thickness:.6,transparent:true,opacity:.12,wireframe:false}));
+var wf=new THREE.Mesh(new THREE.IcosahedronGeometry(2.7,1),new THREE.MeshBasicMaterial({color:0xffffff,wireframe:true,transparent:true,opacity:.07}));group.add(wf);
+var N=mobile?500:1400,pos=new Float32Array(N*3);
+for(var i=0;i<N;i++){var r=4+Math.random()*6,a=Math.random()*6.283,b=Math.acos(2*Math.random()-1);pos[i*3]=r*Math.sin(b)*Math.cos(a);pos[i*3+1]=r*Math.sin(b)*Math.sin(a);pos[i*3+2]=r*Math.cos(b)}
+var pg=new THREE.BufferGeometry();pg.setAttribute('position',new THREE.BufferAttribute(pos,3));
+var pts=new THREE.Points(pg,new THREE.PointsMaterial({color:0xffffff,size:.025,transparent:true,opacity:.55,depthWrite:false}));S.add(pts);
+S.add(group);S.add(new THREE.AmbientLight(0xffffff,.25));var kl=new THREE.DirectionalLight(0xffffff,1);kl.position.set(3,4,6);S.add(kl);var rl=new THREE.PointLight(0xd3322c,1.6,16);rl.position.set(-4,-1,3);S.add(rl);var wl=new THREE.PointLight(0xffffff,.9,14);wl.position.set(4,2,2.5);S.add(wl);var ml=new THREE.PointLight(0xd3322c,1.3,12);S.add(ml);
+var asp=innerWidth/innerHeight,narrow=innerWidth<820||asp<1.1,vw=4.82*asp,hx=narrow?0:vw*.2;group.position.set(hx,narrow?1.3:0,0);group.scale.setScalar(narrow?Math.min(.9,vw*.8/3.6):Math.min(.95,vw*.42/3.6));group.rotation.y=-.6;
+ready=true;
+
+addEventListener('pointermove',function(e){mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5},{passive:true});
+addEventListener('resize',function(){R.setSize(innerWidth,innerHeight);C.aspect=innerWidth/innerHeight;C.updateProjectionMatrix()});
+var tl=gsap.timeline({scrollTrigger:{trigger:document.body,start:'top top',end:'bottom bottom',scrub:1.2}});
+var ox=narrow?0:1;
+tl.to(group.rotation,{y:Math.PI*2.6,x:.35,duration:1,ease:'none'},0)
+  .to(group.position,{x:-hx*ox,y:narrow?.3:-.2,duration:.3,ease:'power1.inOut'},0)
+  .to(group.position,{x:hx*.7*ox,y:0,duration:.3,ease:'power1.inOut'},.3)
+  .to(group.position,{x:0,y:.2,z:1.5,duration:.4,ease:'power1.inOut'},.6);
+var coarse=matchMedia('(pointer:coarse)').matches;addEventListener('orientationchange',function(){setTimeout(function(){location.reload()},350)});var vis=true;document.addEventListener('visibilitychange',function(){vis=!document.hidden});
+var clock=new THREE.Clock();
+(function loop(){requestAnimationFrame(loop);if(!vis)return;var t=clock.getElapsedTime();ml.position.set(mx*14,-my*9,4);rl.position.x=Math.sin(t*.6)*5;wl.position.y=Math.cos(t*.5)*3;if(coarse){mx=Math.sin(t*.5)*.3;my=Math.cos(t*.4)*.15}
+if(!reduce){logo.rotation.y+=(mx*.9-logo.rotation.y)*.05;logo.rotation.x+=(my*.6-logo.rotation.x)*.05;ring.rotation.z=t*.25;wf.rotation.y=t*.06;pts.rotation.y=t*.01;group.children[0].position.y=Math.sin(t*.9)*.08}
+C.position.x+=(mx*.5-C.position.x)*.04;C.position.y+=(-my*.4-C.position.y)*.04;C.lookAt(0,0,0);
+R.render(S,C)})();
+}catch(e){document.getElementById('bg').style.display='none'}
+
+/* ---------- Entrada + reveals ---------- */
+var pre=document.getElementById('pre');
+
+function scrollFX(){
+ gsap.to('#pg',{scaleX:1,ease:'none',scrollTrigger:{trigger:document.body,start:'top top',end:'bottom bottom',scrub:.3}});
+ gsap.to('.hero .wrap',{yPercent:-14,opacity:.15,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+ if(window.gsap&&gsap.quickTo){var sk=gsap.quickTo('.grp','skewX',{duration:.5,ease:'power3'});
+  ScrollTrigger.create({onUpdate:function(self){sk(gsap.utils.clamp(-9,9,self.getVelocity()/-260))}});
+  ScrollTrigger.addEventListener('scrollEnd',function(){sk(0)})}
+ gsap.fromTo('.trk',{xPercent:0},{xPercent:-4,ease:'none',scrollTrigger:{trigger:'.mq',start:'top bottom',end:'bottom top',scrub:true}});
+ document.querySelectorAll('.row').forEach(function(r){r.removeAttribute('data-r');
+  gsap.from(r.children,{x:-70,opacity:0,duration:1.1,ease:'power3.out',stagger:.12,scrollTrigger:{trigger:r,start:'top 90%'}})});
+ gsap.fromTo('#servicos',{'--sx':'-16%'},{'--sx':'16%',ease:'none',scrollTrigger:{trigger:'#servicos',start:'top bottom',end:'bottom top',scrub:true}});
+ gsap.fromTo('#servicos h2',{letterSpacing:'.12em'},{letterSpacing:'-.025em',ease:'none',scrollTrigger:{trigger:'#servicos h2',start:'top 95%',end:'top 45%',scrub:true}});
+ document.querySelectorAll('.card').forEach(function(c,i){c.removeAttribute('data-r');
+  gsap.fromTo(c,{y:110+i*50,opacity:0,scale:.94},{y:0,opacity:1,scale:1,ease:'none',scrollTrigger:{trigger:c,start:'top 105%',end:'top 62%',scrub:true}});
+  gsap.from(c.querySelector('b'),{xPercent:-60,opacity:0,duration:1,ease:'power3.out',scrollTrigger:{trigger:c,start:'top 80%'}})});
+ gsap.fromTo('#contato h2',{scale:.82},{scale:1,ease:'none',scrollTrigger:{trigger:'#contato',start:'top 85%',end:'top 35%',scrub:true}});
+ gsap.from('footer .wrap',{y:30,opacity:0,duration:1,ease:'power3.out',scrollTrigger:{trigger:'footer',start:'top 98%'}});
+ if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){ScrollTrigger.refresh()})}
+function hero(){
+ if(reduce){gsap.set('h1 .w>span,[data-r]',{clearProps:'all'});return}
+ gsap.from('h1 .w>span',{yPercent:110,duration:1.2,ease:'power4.out',stagger:.07});
+ gsap.to('.hero [data-r]',{opacity:1,y:0,duration:1,ease:'power3.out',stagger:.12,delay:.5});
+ document.querySelectorAll('section:not(.hero) [data-r]:not(.row):not(.card)').forEach(function(el){
+  gsap.fromTo(el,{y:48,opacity:0},{y:0,opacity:1,duration:1.1,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 88%'}})});
+ var m=document.getElementById('man');var words=m.textContent.split(' ');m.textContent='';words.forEach(function(w){var sp=document.createElement('span');sp.textContent=w;m.appendChild(sp);m.appendChild(document.createTextNode(' '))});
+ gsap.to('#man span',{opacity:1,stagger:.08,ease:'none',scrollTrigger:{trigger:'#manifesto',start:'top top',end:'+=110%',pin:true,anticipatePin:1,scrub:true}});
+ scrollFX();
+}
+if(reduce){pre.remove();hero()}
+else{gsap.set('.hero [data-r]',{y:30});
+ var o={v:0},c=document.getElementById('cnt');
+ gsap.timeline().to(o,{v:100,duration:1.3,ease:'power2.inOut',onUpdate:function(){c.textContent=Math.round(o.v)}})
+ .to(pre,{yPercent:-100,duration:.9,ease:'power4.inOut',onStart:hero},'+=.15').add(function(){pre.remove()})}
+
+/* ---------- Consentimento de cookies ---------- */
+var CK=document.getElementById('ck'),KEY='vsia-consent';
+function gc(){try{return localStorage.getItem(KEY)}catch(x){return null}}
+function sc(v){try{localStorage.setItem(KEY,v)}catch(x){}window.vsiaConsent=v;CK.classList.remove('show')}
+window.vsiaConsent=gc();
+document.getElementById('ckA').addEventListener('click',function(){sc('all')});
+document.getElementById('ckR').addEventListener('click',function(){sc('essential')});
+document.getElementById('ckO').addEventListener('click',function(){CK.classList.add('show');document.getElementById('ckA').focus()});
+if(!gc())setTimeout(function(){CK.classList.add('show')},reduce?500:3400);
+
+/* ---------- Som futurista (Web Audio, sintetizado, sem arquivos) ---------- */
+var AC=null,MG,on=false,amb=false,lastB=0,snd=document.querySelector('.snd');
+function ctx(){if(!AC){var C=window.AudioContext||window.webkitAudioContext;if(!C)return null;AC=new C();MG=AC.createGain();MG.gain.value=0;MG.connect(AC.destination)}return AC}
+function ambience(){if(amb)return;amb=true;var f=AC.createBiquadFilter();f.type='lowpass';f.frequency.value=420;f.Q.value=5;f.connect(MG);
+ var l=AC.createOscillator(),lg=AC.createGain();l.frequency.value=.07;lg.gain.value=240;l.connect(lg);lg.connect(f.frequency);l.start();
+ [55,82.4,110.5,164.8].forEach(function(fr,i){var o=AC.createOscillator(),g=AC.createGain();o.type=i%2?'sawtooth':'sine';o.frequency.value=fr;o.detune.value=(i-1.5)*8;g.gain.value=i%2?.045:.11;o.connect(g);g.connect(f);o.start()})}
+function blip(f,d,v){if(!on||!AC)return;var t=AC.currentTime,o=AC.createOscillator(),g=AC.createGain();o.type='sine';o.frequency.setValueAtTime(f,t);o.frequency.exponentialRampToValueAtTime(f*1.9,t+d);g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(v,t+.01);g.gain.exponentialRampToValueAtTime(.0001,t+d);o.connect(g);g.connect(AC.destination);o.start(t);o.stop(t+d+.05)}
+function whoosh(){if(!on||!AC)return;var t=AC.currentTime,n=AC.sampleRate,b=AC.createBuffer(1,n,n),d=b.getChannelData(0);for(var i=0;i<n;i++)d[i]=Math.random()*2-1;
+ var s=AC.createBufferSource();s.buffer=b;var f=AC.createBiquadFilter();f.type='bandpass';f.Q.value=3;f.frequency.setValueAtTime(200,t);f.frequency.exponentialRampToValueAtTime(5000,t+.9);var g=AC.createGain();g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(.25,t+.45);g.gain.linearRampToValueAtTime(0,t+1);s.connect(f);f.connect(g);g.connect(AC.destination);s.start(t);
+ [220,330,440,660].forEach(function(fr,i){setTimeout(function(){blip(fr,.7,.05)},i*110)})}
+function setSound(v){var c=ctx();if(!c)return;on=v;snd.setAttribute('aria-pressed',v);snd.setAttribute('aria-label',v?'Desativar som':'Ativar som');
+ if(v){c.resume();ambience();MG.gain.setTargetAtTime(.35,c.currentTime,.8);whoosh()}else{MG.gain.setTargetAtTime(0,c.currentTime,.25);setTimeout(function(){if(!on)c.suspend()},900)}}
+snd.addEventListener('click',function(){setSound(!on)});
+document.addEventListener('visibilitychange',function(){if(!AC||!on)return;document.hidden?AC.suspend():AC.resume()});
+if(matchMedia('(hover:hover)').matches)document.addEventListener('pointerover',function(e){var el=e.target.closest&&e.target.closest('.btn,.row,.card,.snd,.links a');if(!el||el.contains(e.relatedTarget))return;var n=Date.now();if(n-lastB<140)return;lastB=n;blip(520,.14,.035)});
+document.addEventListener('click',function(e){if(e.target.closest&&e.target.closest('.btn,.menu,.wa'))blip(840,.22,.06)});
+
+/* ---------- Sombra vermelha que acompanha o mouse ---------- */
+var gl=document.getElementById('glow'),gx=innerWidth/2,gy=innerHeight/2,gtx=gx,gty=gy;
+if(!reduce&&matchMedia('(hover:hover) and (pointer:fine)').matches){
+ addEventListener('pointermove',function(e){gtx=e.clientX;gty=e.clientY;gl.style.opacity='1'},{passive:true});
+ document.documentElement.addEventListener('mouseleave',function(){gl.style.opacity='0'});
+ (function gl_(){requestAnimationFrame(gl_);gx+=(gtx-gx)*.08;gy+=(gty-gy)*.08;gl.style.transform='translate3d('+gx.toFixed(1)+'px,'+gy.toFixed(1)+'px,0)'})()}
+})();
+</script>
+</body>
+</html>
