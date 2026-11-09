@@ -1,7 +1,7 @@
 # VSIA Solutions — site (Netlify)
 
 ## Publicar
-1. Acesse https://app.netlify.com/drop
+1. Acesse https:[//app.netlify.com/drop](https://vsiasolutions.netlify.app/)
 2. Arraste a pasta `vsia-netlify` inteira (ou o arquivo .zip) para a página.
 3. Pronto: o Netlify gera um endereço `*.netlify.app`. Depois, em *Domain management*, adicione seu domínio.
 
